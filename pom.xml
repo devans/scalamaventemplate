@@ -10,11 +10,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <scala.version>2.9.2</scala.version>
+        <scala.version>2.10.1</scala.version>
+        <scala.annotation>2.10</scala.annotation>
         <scala-maven-plugin.version>3.0.2</scala-maven-plugin.version>
-        <slf4j-api.version>1.6.1</slf4j-api.version>
-        <slf4s.version>1.0.6</slf4s.version>
-        <scalatest.version>1.8</scalatest.version>
+        <slf4j-api.version>1.7.2</slf4j-api.version>
+        <scalalogging.version>1.0.1</scalalogging.version>
+        <scalatest.version>1.9.1</scalatest.version>
         <scalariform-maven-plugin.version>0.1.0</scalariform-maven-plugin.version>
         <build-helper-maven-plugin.version>1.1</build-helper-maven-plugin.version>
         <maven-jar-plugin.version>2.2</maven-jar-plugin.version>
@@ -50,7 +51,7 @@
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_${scala.version}</artifactId>
+            <artifactId>scalatest_${scala.annotation}</artifactId>
             <version>${scalatest.version}</version>
             <scope>test</scope>
         </dependency>
